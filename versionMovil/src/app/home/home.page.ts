@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {JsService} from "../../assets/service/js.service";
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
-
+  constructor(private js: JsService) {
+    this.js.loadModuleScript('/nestor','LoginValidation.js');
+  }
 }
