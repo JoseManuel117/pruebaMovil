@@ -15,59 +15,59 @@
   <!--JS-->
 
 <!-- Main -->
-<ion-content>
-  <ion-row class="justify-content-center">
-    <!--Left-->
-    <ion-col size="12" size-md="6" class="margin-top">
-      <h3 class="text-center text-highlight">¿No tienes una cuenta?</h3> <br> <br>
-      <div class="align-items-start">
-        <ion-img src="./assets/Img/historial.png" class="icon" alt="Componentes"></ion-img>
-        <h4>Guarda el historial de tus compras</h4>
-      </div> <br> <br>
-      <div class="align-items-start">
-        <ion-img src="./assets/Img/carrito2.png" class="icon" alt="Componentes"></ion-img>
-        <h4>Guarda tu carrito entre distintas sesiones</h4>
-      </div> <br> <br>
-      <div class="align-items-start">
-        <ion-img src="./assets/Img/estrella.png" class="icon" alt="Componentes"></ion-img>
-        <h4>Realiza reseñas de los productos</h4>
-      </div> <br> <br>
-      <ion-row class="justify-content-center">
-        <ion-button routerLink="/register" expand="full" class="orange-button">Registrarse</ion-button>
-      </ion-row>
-    </ion-col>
+  <ion-content>
+    <ion-row class="justify-content-center">
+      <!--Left-->
+      <ion-col size="12" size-md="6" class="margin-top">
+        <h3 class="text-center text-highlight">¿No tienes una cuenta?</h3> <br> <br>
+        <div class="align-items-start">
+          <ion-img src="./assets/Img/historial.png" class="icon" alt="Componentes"></ion-img>
+          <h4>Guarda el historial de tus compras</h4>
+        </div> <br> <br>
+        <div class="align-items-start">
+          <ion-img src="./assets/Img/carrito2.png" class="icon" alt="Componentes"></ion-img>
+          <h4>Guarda tu carrito entre distintas sesiones</h4>
+        </div> <br> <br>
+        <div class="align-items-start">
+          <ion-img src="./assets/Img/estrella.png" class="icon" alt="Componentes"></ion-img>
+          <h4>Realiza reseñas de los productos</h4>
+        </div> <br> <br>
+        <ion-row class="justify-content-center">
+          <ion-button routerLink="/register" expand="full" class="orange-button">Registrarse</ion-button>
+        </ion-row>
+      </ion-col>
 
-    <!--Right-->
-    <ion-col size="12" size-md="6" class="margin-top border-start">
-      <!--Up-->
-      <ion-row class="justify-content-center margin-bottom">
-        <ion-col size="12" class="text-center margin-top">
-          <a class="btn btn-outline-light" href="/users/googleauth" role="button" style="text-transform:none">
-            <ion-img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in"
-                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"></ion-img>
-            Login with Google
-          </a>
-        </ion-col>
-      </ion-row>
-      <ion-row class="justify-content-center border-top margin-start">
-        <form id="signInForm" target="frame" class="margin-start ion-margin-top">
-          <ion-item>
-            <ion-label position="floating">Correo electronico</ion-label>
-            <ion-input type="email" id="e-mail" placeholder="name@example.com" required></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-label position="floating">Contraseña</ion-label>
-            <ion-input type="password" id="pwd" placeholder="******" required></ion-input>
-          </ion-item>
-          <ion-row class="justify-content-center margin-top">
-            <ion-button type="submit" expand="full" class="orange-button">Enviar</ion-button>
-          </ion-row>
-        </form>
-        <iframe name="frame" style="display:none;"></iframe>
-      </ion-row>
-    </ion-col>
-  </ion-row>
-</ion-content>
+      <!--Right-->
+      <ion-col size="12" size-md="6" class="margin-top border-start">
+        <!--Up-->
+        <ion-row class="justify-content-center margin-bottom">
+          <ion-col size="12" class="text-center margin-top">
+            <a class="btn btn-outline-light" href="/users/googleauth" role="button" style="text-transform:none">
+              <ion-img  style="margin-bottom:3px; margin-right:5px; width:20px" alt="Google sign-in"
+                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"></ion-img>
+              Login with Google
+            </a>
+          </ion-col>
+        </ion-row>
+        <ion-row class="justify-content-center border-top margin-start">
+          <form id="signInForm" target="frame" class="margin-start ion-margin-top">
+            <ion-item>
+              <ion-label position="floating">Correo electronico</ion-label>
+              <ion-input type="email" id="e-mail" placeholder="name@example.com" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Contraseña</ion-label>
+              <ion-input type="password" id="pwd" placeholder="******" required></ion-input>
+            </ion-item>
+            <ion-row class="justify-content-center margin-top">
+              <ion-button type="submit" expand="full" class="orange-button">Enviar</ion-button>
+            </ion-row>
+          </form>
+          <iframe name="frame" style="display:none;"></iframe>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-content>
 </ion-content>
 <script type="module" src="JS/LoginValidation.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>

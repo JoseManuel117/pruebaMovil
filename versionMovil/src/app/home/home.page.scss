@@ -1,6 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+ng-content{
+  display: flex;
+  justify-content: center;
+}
 
-body{
+.inner-scroll{
+  display: flex;
+  justify-content: center;
+}
+body {
   display: flex;
   flex-flow: column;
   background-color: red;
@@ -23,9 +31,11 @@ td {
 .p-margin {
   margin-left: 1em;
 }
-ul,li{
-  color:white;
+
+ul, li {
+  color: white;
 }
+
 h1,
 h2,
 h3,
@@ -48,7 +58,7 @@ h6 {
 
 .img-middle {
   vertical-align: middle;
-  margin-right: 1em
+  margin-right: 1em;
 }
 
 .mt-5 {
@@ -119,7 +129,6 @@ h6 {
 
 td {
   padding: 20px;
-
 }
 
 .opciones_cuenta {
@@ -449,7 +458,4 @@ label:hover~label {
     overflow-x: auto !important;
     width: 100% !important;
   }
-
 }
-
-
