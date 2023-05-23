@@ -15,61 +15,65 @@
   <!--JS-->
 
 <!-- Main -->
-  <ion-content>
-    <ion-row class="justify-content-center">
+  <ion-content class="bg-dark container">
+    <div class="d-flex justify-content-center">
       <!--Left-->
-      <ion-col size="12" size-md="6" class="margin-top">
-        <h3 class="text-center text-highlight">¿No tienes una cuenta?</h3> <br> <br>
-        <div class="align-items-start">
-          <ion-img src="./assets/Img/historial.png" class="icon" alt="Componentes"></ion-img>
+      <div class="mr-5 mt-5">
+        <h3 class="text-highlight text-center">¿No tienes una cuenta?</h3>
+        <div class="d-flex">
+          <ion-img src="./assets/Img/historial.png" class="icon"></ion-img>
           <h4>Guarda el historial de tus compras</h4>
-        </div> <br> <br>
-        <div class="align-items-start">
-          <ion-img src="./assets/Img/carrito2.png" class="icon" alt="Componentes"></ion-img>
+        </div>
+        <div class="d-flex">
+          <ion-img src="./assets/Img/carrito2.png" class="icon"></ion-img>
           <h4>Guarda tu carrito entre distintas sesiones</h4>
-        </div> <br> <br>
-        <div class="align-items-start">
-          <ion-img src="./assets/Img/estrella.png" class="icon" alt="Componentes"></ion-img>
+        </div>
+        <br><br>
+        <div class="d-flex">
+          <ion-img src="./assets/Img/estrella.png" class="icon"></ion-img>
           <h4>Realiza reseñas de los productos</h4>
-        </div> <br> <br>
-        <ion-row class="justify-content-center">
-          <ion-button routerLink="/register" expand="full" class="orange-button">Registrarse</ion-button>
-        </ion-row>
-      </ion-col>
+        </div>
+        <div class="d-flex justify-content-center">
+          <ion-button expand="block" color="warning" routerLink="/register">Registrarse</ion-button>
+        </div>
+      </div>
 
       <!--Right-->
-      <ion-col size="12" size-md="6" class="margin-top border-start">
+      <div class="border-start row position-relative mt-5">
+
         <!--Up-->
-        <ion-row class="justify-content-center margin-bottom">
-          <ion-col size="12" class="text-center margin-top">
-            <a class="btn btn-outline-light" href="/users/googleauth" role="button" style="text-transform:none">
-              <ion-img  style="margin-bottom:3px; margin-right:5px; width:20px" alt="Google sign-in"
+        <div class="ml-2 justify-content-center d-flex mb-5">
+          <div class="col-md-12 text-center mt-5">
+            <a class="btn btn-outline-light" href="/users/googleauth" style="text-transform:none">
+              <ion-img  style="margin-bottom:3px; margin-right:5px; width: 20px;" alt="Google sign-in"
                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"></ion-img>
               Login with Google
             </a>
-          </ion-col>
-        </ion-row>
-        <ion-row class="justify-content-center border-top margin-start">
-          <form id="signInForm" target="frame" class="margin-start ion-margin-top">
-            <ion-item>
-              <ion-label position="floating">Correo electronico</ion-label>
+          </div>
+        </div>
+
+        <!--Down-->
+        <div class="border-top justify-content-center d-flex ml-2">
+          <form id="signInForm" target="frame" class="ml-2 mt-2">
+            <ion-item class="mb-3">
+              <ion-label position="stacked">Correo electrónico</ion-label>
               <ion-input type="email" id="e-mail" placeholder="name@example.com" required></ion-input>
             </ion-item>
-            <ion-item>
-              <ion-label position="floating">Contraseña</ion-label>
+            <ion-item class="mb-3">
+              <ion-label position="stacked">Contraseña</ion-label>
               <ion-input type="password" id="pwd" placeholder="******" required></ion-input>
             </ion-item>
-            <ion-row class="justify-content-center margin-top">
-              <ion-button type="submit" expand="full" class="orange-button">Enviar</ion-button>
-            </ion-row>
+            <ion-item class="d-flex justify-content-center">
+              <ion-button expand="block" color="warning" type="submit">Enviar</ion-button>
+            </ion-item>
           </form>
           <iframe name="frame" style="display:none;"></iframe>
-        </ion-row>
-      </ion-col>
-    </ion-row>
+        </div>
+      </div>
+    </div>
   </ion-content>
-</ion-content>
-<script type="module" src="JS/LoginValidation.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <script type="module" src="JS/LoginValidation.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 
