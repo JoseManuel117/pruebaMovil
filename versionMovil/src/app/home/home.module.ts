@@ -8,13 +8,17 @@ import { HomePageRoutingModule } from './home-routing.module';
 import {Firestore, collection, collectionData, doc} from '@angular/fire/firestore';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { getDoc } from "firebase/firestore";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    RouterModule.forRoot([
+      { path: 'login', component: HomePageModule}
+    ])
   ],
   declarations: [HomePage]
 })
