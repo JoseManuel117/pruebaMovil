@@ -17,8 +17,11 @@ import {RouterModule} from "@angular/router";
     IonicModule,
     HomePageRoutingModule,
     RouterModule.forRoot([
-      { path: 'login', component: HomePageModule}
+      {path: 'home', component: HomePageModule}
     ])
+  ],
+  exports: [
+    HomePage
   ],
   declarations: [HomePage]
 })
