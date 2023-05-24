@@ -29,6 +29,8 @@ export class PaginaPrincipalPage implements OnInit {
   }
 
 
+
+
   async getUserData(user: any) {
     const userDocRef = doc(this.firestore, `Usuarios/${user?.uid}`);
     const userDocCardsRef = doc(this.firestore, `Usuarios/${user?.uid}/cards/cardsList`);

@@ -11,6 +11,10 @@
     <ion-button routerLink="/login">iniciar sesion</ion-button>
   </div>
 
+  <div>
+    <ion-button [routerLink]="['/master']">Productos</ion-button>
+  </div>
+
   <div *ngIf="(auth.user | async) && signedOut !== true" [routerLink]="['./profile']">
     <p>{{ this.nombreUser.value }}</p>
   </div>
