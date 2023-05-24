@@ -7,18 +7,22 @@ import {Product1Page} from "./product1/product1.page";
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule),
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'Home',
     pathMatch: 'full'
   },
   {
-    path: 'navbar',
-    component: NavbarPage,
-    loadChildren: () => import('./componentes/navbar/navbar.module').then( m => m.NavbarPageModule)
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
+  {
+    path: 'pagina-principal',
+    loadChildren: () => import('./pagina-principal/pagina-principal.module').then( m => m.PaginaPrincipalPageModule)
+  }
+
   {
     path: 'master',
     component:MasterPage,
@@ -36,7 +40,8 @@ const routes: Routes = [
   {
     path: 'dumpty',
     loadChildren: () => import('./dumpty/dumpty.module').then( m => m.DumptyPageModule)
-  },  {
+  },
+  {
     path: 'prueba2',
     loadChildren: () => import('./prueba2/prueba2.module').then( m => m.Prueba2PageModule)
   },

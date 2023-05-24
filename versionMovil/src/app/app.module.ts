@@ -15,9 +15,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import {JsService} from "../assets/service/js.service";
 import {HomePage} from "./home/home.page";
 import {HomePageModule} from "./home/home.module";
-import {NavbarPage} from "./componentes/navbar/navbar.page";
-import {NavbarPageModule} from "./componentes/navbar/navbar.module";
-
+import {PaginaPrincipalPage} from "./pagina-principal/pagina-principal.page";
 
 @NgModule({
   declarations: [
@@ -29,10 +27,10 @@ import {NavbarPageModule} from "./componentes/navbar/navbar.module";
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
     RouterModule.forRoot([
-      {path: '', redirectTo: 'login', pathMatch: 'full'},
+      {path: '', redirectTo: 'Home', pathMatch: 'full'},
       {path: 'login', component: HomePage},
-      {path: 'navbar', component: NavbarPage}
-    ]), NavbarPageModule
+      {path: 'Home', component: PaginaPrincipalPage}
+    ]), HomePageModule
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
