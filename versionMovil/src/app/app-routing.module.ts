@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import {NavbarPage} from "./componentes/navbar/navbar.page";
 import {MasterPage} from "./componentes/master/master.page";
 import {Product1Page} from "./product1/product1.page";
 
@@ -21,7 +20,7 @@ const routes: Routes = [
   {
     path: 'pagina-principal',
     loadChildren: () => import('./pagina-principal/pagina-principal.module').then( m => m.PaginaPrincipalPageModule)
-  }
+  },
 
   {
     path: 'master',
